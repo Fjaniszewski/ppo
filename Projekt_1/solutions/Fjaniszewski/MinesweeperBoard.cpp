@@ -10,7 +10,6 @@ MinesweeperBoard::MinesweeperBoard(int  width, int height, GameMode mode) {
     this->width = width;
     this->height = height;
     this->mode = mode;
-    this->state=RUNNING;
     this->buildField();
 };
 
