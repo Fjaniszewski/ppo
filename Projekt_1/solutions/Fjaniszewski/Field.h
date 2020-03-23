@@ -5,9 +5,6 @@
 #ifndef PROJECT_1_FIELD_H
 #define PROJECT_1_FIELD_H
 
-#endif //PROJECT_1_FIELD_H
-
-#include <iostream>
 
 struct Field
 {
@@ -15,3 +12,5 @@ struct Field
     bool hasFlag;
     bool isRevealed;
 };
+
+#endif //PROJECT_1_FIELD_H

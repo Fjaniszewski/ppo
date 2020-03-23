@@ -5,7 +5,6 @@
 #ifndef PROJECT_1_MINESWEEPERBOARD_H
 #define PROJECT_1_MINESWEEPERBOARD_H
 
-#endif //PROJECT_1_MINESWEEPERBOARD_H
 
 #include "Field.h"
 #include <iostream>
@@ -21,7 +20,6 @@ public:
     int getBoardWidth() const;
     int getBoardHeight() const;
     int getMineCount() const;
-    void buildField();
     int countMines(int x, int y) const;
     bool hasFlag(int x, int y) const;
     void toggleFlag(int x, int y);
@@ -30,9 +28,12 @@ public:
     GameState getGameState() const;
     char getFieldInfo(int x, int y) const;
 private:
+    void buildField();
     Field board[100][100];
     int width;
     int height;
     GameMode mode;
     GameState state;
 };
+
+#endif //PROJECT_1_MINESWEEPERBOARD_H
